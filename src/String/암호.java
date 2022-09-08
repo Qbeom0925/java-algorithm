@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class Main {
+public class 암호 {
 
     public String solution(int n, String s) {
         String answer="";
@@ -17,7 +17,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        암호 T = new 암호();
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
         String s = sc.next();
