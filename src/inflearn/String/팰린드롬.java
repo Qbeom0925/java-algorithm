@@ -1,6 +1,5 @@
-package String;
+package inflearn.String;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class 팰린드롬 {

@@ -1,4 +1,4 @@
-package Array;
+package inflearn.Array;
 import java.util.Scanner;
 
 public class 소수 {
