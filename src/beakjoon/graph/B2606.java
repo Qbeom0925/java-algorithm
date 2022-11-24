@@ -8,6 +8,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class B2606 {
+
     static int n, k;
     static ArrayList<ArrayList<Integer>> graph;
     static int answer;
@@ -35,7 +36,7 @@ public class B2606 {
             graph.get(c2).add(c1);
         }
 
-        BFS(1);
+        DFS(1);
         System.out.println(answer);
     }
 
@@ -49,7 +50,7 @@ public class B2606 {
             for(int i=0; i<q.size(); i++) {
                 int cur = q.poll();
                 for(Integer next : graph.get(cur)) {
-                    if(!visited[next]) {
+                    if(visited[next]==false) {
                         answer++;
                         visited[next]=true;
                         q.offer(next);
@@ -57,6 +58,15 @@ public class B2606 {
                 }
             }
         }
+    }
 
+    static void DFS(int s) {
+        visited[s]=true;
+        for(int v : graph.get(s)) {
+            if(visited[v]==false){
+                answer++;
+                DFS(v);
+            }
+        }
     }
 }
