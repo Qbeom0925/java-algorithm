@@ -1,5 +1,4 @@
 package beakjoon.math;
-
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -33,5 +32,7 @@ public class B1002 {
             }
             bw.write("\n");
         }
+        bw.flush();
+        bw.close();
     }
 }
