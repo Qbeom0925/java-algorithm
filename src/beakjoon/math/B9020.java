@@ -29,6 +29,8 @@ public class B9020 {
                     System.out.println((temp-cnt)+" "+(temp+cnt));
                     break;
                 }
+                String answer = "";
+                answer.
                 cnt++;
             }
         }
